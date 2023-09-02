@@ -14,7 +14,7 @@ import gitIcon from '../images/git.png'
 function Skills() {
   return (
     <div className='w-[100%] h-[40rem] pt-32 align-middle text-center flex flex-col'>
-       <div className='flex items-center py-4 mb-14 justify-center'>
+       <div className='flex items-center py-4 mb-14 max-sm:mb-0 justify-center'>
        <div className="h-px bg-amber-300 w-[10%]"></div> 
         {/* <img src={skillIcon} alt='skills' className='w-[6rem] h-[6rem] max-[500px]:h-[4rem] max-[500px]:w-[4rem]'></img> */}
        <div className='text-[3rem] bg-gradient-to-r
