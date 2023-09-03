@@ -1,13 +1,4 @@
-interface highlightedTextData{
-    normalData?:string,
-    highlightedPart?:string,
-    endingData?:string,
-}
-
-interface data{
-    companyName:string,
-    bulletPointsArray:highlightedTextData[],
-}
+import { data } from "../../utility/interface";
 
 const experienceData:data ={
     companyName:'FirseBooking',

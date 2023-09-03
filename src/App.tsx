@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Experience from './components/experience/Experience';
-import Projects from './components/Projects';
+import Projects from './components/Project/Projects';
 
 
 function App() {

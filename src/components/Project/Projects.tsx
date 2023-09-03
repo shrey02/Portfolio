@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
+import projectData from "./projectData";
 
 function Projects() {
     const [projectTypeIndex,setProjectTypeIndex] = useState<number>(0);
     const projectType: string[] = ["Full stack","React","JavaScript"];
-
+    
     const handleOnButtonClick = (index:number)=>{
           setProjectTypeIndex(index);
     }
@@ -34,7 +35,13 @@ function Projects() {
           ))
         }
       </div>
-      <ProjectCard/>
+      <div className="flex flex-wrap justify-center">
+      {
+        projectData[projectTypeIndex].map((data)=>(
+          <ProjectCard {...data}/>
+        ))
+      }
+      </div>
     </div>
   );
 }
