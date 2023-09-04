@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 function Experience() {
   return (
-    <div className="w-[100%] bg-[#0e0b0e] mt-4 h-auto pb-5">
+    <div className="w-[100%] bg-[#0e0b0e] mt-4 h-auto pb-5" id="Experience">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#1c171c"
@@ -27,6 +27,7 @@ function Experience() {
       
       <div className="min-[800px]:flex-wrap min-[800px]:justify-center min-[800px]:flex">
         <motion.img src={boyIcon} 
+        alt="boy"
         className="w-[10rem] h-[15rem] m-auto min-[800px]:hidden mb-7"
         initial={{ y: -10 }}
         animate={{ y: 0 }}
@@ -34,6 +35,7 @@ function Experience() {
         />
         <Card {...experienceData}/>
         <motion.img src={boyIcon} 
+        alt="boy"
         className="w-[10rem] h-[15rem] mt-24 max-[800px]:hidden"
         initial={{ y: -10 }}
         animate={{ y: 0 }}

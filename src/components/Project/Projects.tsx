@@ -3,15 +3,15 @@ import ProjectCard from "./ProjectCard";
 import projectData from "./projectData";
 
 function Projects() {
-    const [projectTypeIndex,setProjectTypeIndex] = useState<number>(0);
-    const projectType: string[] = ["Full stack","React","JavaScript"];
-    
-    const handleOnButtonClick = (index:number)=>{
-          setProjectTypeIndex(index);
-    }
-    
+  const [projectTypeIndex, setProjectTypeIndex] = useState<number>(1);
+  const projectType: string[] = ["Full stack", "React", "JavaScript"];
+
+  const handleOnButtonClick = (index: number) => {
+    setProjectTypeIndex(index);
+  };
+
   return (
-    <div className="w-[100%]">
+    <div className="w-[100%]" id="Project">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#0e0b0e"
@@ -29,18 +29,21 @@ function Projects() {
         <div className="h-px bg-amber-300 w-[10%]"></div>
       </div>
       <div className="bg-[#00000073] w-[25rem] max-md:w-[90%] max-sm:w-[90%] h-[3rem] rounded-lg m-auto mb-5 flex p-2">
-        {
-          projectType.map((type,index)=>(
-                <button key={index} className={`w-32 h-8 ${index===projectTypeIndex ? 'bg-pink-700' : 'bg-transparent'} font-roboto rounded-md m-auto text-white font-bold`} onClick={()=>handleOnButtonClick(index)}>{type}</button>
-          ))
-        }
+        {projectType.map((type, index) => (
+          <button
+            key={index}
+            className={`w-32 h-8 ${
+              index === projectTypeIndex ? "bg-pink-700" : "bg-transparent"
+            } font-roboto rounded-md m-auto text-white font-bold`}
+            onClick={() => handleOnButtonClick(index)}>
+            {type}
+          </button>
+        ))}
       </div>
       <div className="flex flex-wrap justify-center">
-      {
-        projectData[projectTypeIndex].map((data)=>(
-          <ProjectCard {...data}/>
-        ))
-      }
+        {projectData[projectTypeIndex].map((data) => (
+          <ProjectCard {...data} />
+        ))}
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="relative w-[100%] h-[22rem] shadow-[0_115px_95px_-45px_rgba(109,94,102,0.63)] bg-[#151515] max-[1300px]:h-[16rem] max-[780px]:h-[15rem] max-[550px]:h-[13rem]">
+    <div className="relative w-[100%] h-[22rem] shadow-[0_115px_95px_-45px_rgba(109,94,102,0.63)] bg-[#151515] max-[1300px]:h-[16rem] max-[780px]:h-[15rem] max-[550px]:h-[13rem]" id="About">
       <div className="w-[100%]  text-center pt-[4rem] z-20">
         <h1
           className="text-[4rem] font-roboto bg-gradient-to-r
