@@ -1,6 +1,6 @@
 import { data } from "../../utility/interface";
 
-const experienceData:data ={
+const experienceData:data = {
     companyName:'FirseBooking',
     bulletPointsArray:[
         {
@@ -21,7 +21,8 @@ const experienceData:data ={
     ]
 }     
 
-const experienceData2:data = {  companyName:'Devsnest',
+const experienceData2:data = {  
+    companyName:'Devsnest',
 bulletPointsArray:[{
     normalData:'• Externship Program where I lead a team of',
     highlightedPart:'15 trainees ',

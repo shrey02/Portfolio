@@ -40,7 +40,7 @@ function Projects() {
           </button>
         ))}
       </div>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap w-[80%] m-auto">
         {projectData[projectTypeIndex].map((data) => (
           <ProjectCard {...data} />
         ))}

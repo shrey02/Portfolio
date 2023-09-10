@@ -3,6 +3,7 @@ export interface card {
    lastName : string,
    image : string,
    stack : string[],
+   about : string,
    codeLink : string,
    liveLink : string 
 }

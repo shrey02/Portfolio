@@ -14,7 +14,7 @@ function Card(props:data){
   console.log(props);
   return (
     <>
-        <div className="w-[19rem] border-2 border-pink-600 rounded-2xl m-auto text-center p-2 mt-8">
+        <div className="w-[19rem] border-2 border-pink-600 rounded-2xl m-auto text-center p-2 py-3 mt-8">
           <h1
             className="bg-gradient-to-r
        from-yellow-300 via-amber-300 to-white inline-block 

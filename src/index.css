@@ -5,3 +5,26 @@
 body {
   background-color: #1c171c;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 0.4rem;
+    scrollbar-width:thin;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000;
+    width:0.5rem;
+    
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(219 39 119) ;
+    border-radius: 2rem;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #363830;
+}

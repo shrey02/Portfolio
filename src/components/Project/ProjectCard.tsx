@@ -1,27 +1,33 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 import {card} from '../../utility/interface';
+import {FiExternalLink} from 'react-icons/fi';
+import {BsGithub} from 'react-icons/bs';
 
 const ProjectCard = ( props : card ) => {
   return (
-    <div className='w-[20rem] h-[22rem] rounded-lg m-auto relative bg-zinc-950 p-2 my-5 '>
-        <div className=' w-[96%] h-[55%] overflow-hidden mt-1 m-auto rounded-md '>
-        <img src={props.image} alt='codebuddy' className=' w-[100%] h-[100%] rounded-md hover:scale-110 duration-[700ms]'></img>
-        </div>
-        <div className='w-[100%] bg-zinc-950 rounded-lg mt-3 align-middle justify-center text-center'>
-        <h1 className='text-2xl text-white font-roboto font-bold text-center rounded-md m-auto'>{props.firstName}<span className='text-fuchsia-600'>{props.lastName}</span></h1>
-        <div className='flex justify-evenly'>
-          {
-            props.stack.map((tech,idx)=>(
-              <div key = {idx} className='h-[2rem] w-[5rem]  bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20  rounded-md text-[#fd1c89eb] font-semibold text-center mt-2 px-1 pt-1'>{tech}</div>
-            ))
-          }
-        </div>
-        <div className='flex justify-between px-3 mt-4'>
-        <a href={props.liveLink} className='h-[2rem] w-[45%] bg-[#232628bc] hover:bg-gray-700 rounded-md text-white font-bold text-center mt-2 px-2 pt-1'>Live</a>
-        <a href={props.codeLink} className='h-[2rem] w-[45%] bg-[#232628bc] hover:bg-gray-700 rounded-md text-white font-bold text-center mt-2 px-2 pt-1'>Code</a>
-        </div>
-        </div>
-    </div>
+    <motion.div
+    transition={{ ease: "easeOut", duration: 0.8 ,  }}
+    initial={{ scale:0.2 }}
+    whileInView={{ scale: 1 }}
+    viewport={{ once: true }}
+     className='w-[20rem] h-[29rem] rounded-3xl m-auto relative my-5 bg-zinc-950 bg-opacity-40 shadow-2xl  border-zinc-800 border'>
+     <h1 className='text-center text-2xl text-gray-200 font-pecifico font-semibold w-[100%] mt-2'>{props.firstName +" "+props.lastName}</h1>  
+     <img alt='project' src={props.image} className='w-[95%] rounded-sm m-auto h-[10rem] mt-2'></img>   
+     <div className='text-base  border-zinc-500 text-gray-300 font-mono  text-left ml-5 mt-3 '>{props.about}</div>
+     <div className='w-[95%] m-auto flex flex-wrap text-lg text-black font-semibold justify-evenly mt-5'>
+      {
+        props.stack.map((tech,idx)=>(
+           <div key={idx} className=' bg-emerald-100  bg-opacity-40 rounded-md px-2 mx-2 mb-2'>{tech}</div>
+        ))
+      }
+     </div>
+    
+     <div className='flex absolute bottom-3 left-1/2 -translate-x-1/2'>
+        <a href={props.codeLink} className='text-4xl text-white mr-16 hover:text-teal-300'><FiExternalLink/></a>
+        <a href={props.codeLink} className='text-4xl text-white hover:text-teal-300'><BsGithub/></a>
+     </div>
+    </motion.div>
   )
 }
 
