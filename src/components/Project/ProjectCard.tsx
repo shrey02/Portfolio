@@ -11,7 +11,7 @@ const ProjectCard = ( props : card ) => {
     initial={{ scale:0.2 }}
     whileInView={{ scale: 1 }}
     viewport={{ once: true }}
-     className='w-[20rem] h-[29rem] rounded-3xl m-auto relative my-5 bg-zinc-950 bg-opacity-40 shadow-2xl  border-zinc-800 border'>
+     className='w-[20rem] h-[29.5rem] rounded-3xl m-auto relative my-5 bg-zinc-950 bg-opacity-40 shadow-2xl  border-zinc-800 border'>
      <h1 className='text-center text-2xl text-gray-200 font-pecifico font-semibold w-[100%] mt-2'>{props.firstName +" "+props.lastName}</h1>  
      <img alt='project' src={props.image} className='w-[95%] rounded-sm m-auto h-[10rem] mt-2'></img>   
      <div className='text-base  border-zinc-500 text-gray-300 font-mono  text-left ml-5 mt-3 '>{props.about}</div>

@@ -45,7 +45,7 @@ const reactProjectData : card [] = [
         lastName : ' Clone',
         image : myntraImage,
         stack : ['Tailwind','React','Parcel'],
-        about: 'E-commerce app with Configuration Driven UI, using Myntra APIs to render the clothing items, shimmer UI, adding clothing items to the cart.',
+        about: 'E-commerce app with Config Driven UI, using Myntra APIs to render the clothing items,and adding clothing items to the cart and wishlist.',
         liveLink : 'https://myntra2206.vercel.app/',
         codeLink : 'https://github.com/shrey02/myntra' 
     },
