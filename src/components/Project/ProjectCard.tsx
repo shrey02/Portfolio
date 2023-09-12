@@ -24,7 +24,7 @@ const ProjectCard = ( props : card ) => {
      </div>
     
      <div className='flex absolute bottom-3 left-1/2 -translate-x-1/2'>
-        <a href={props.codeLink} className='text-4xl text-white mr-16 hover:text-teal-300'><FiExternalLink/></a>
+        <a href={props.liveLink} className='text-4xl text-white mr-16 hover:text-teal-300'><FiExternalLink/></a>
         <a href={props.codeLink} className='text-4xl text-white hover:text-teal-300'><BsGithub/></a>
      </div>
     </motion.div>
