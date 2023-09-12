@@ -6,7 +6,6 @@ import Experience from './components/experience/Experience';
 import Projects from './components/Project/Projects';
 import { Contact } from './components/Contact';
 import Footer from './components/Footer';
-import MobileNav from './components/Navbar/MobileNav';
 import { ScrollToTop } from './components/ScrollToTop';
 
 

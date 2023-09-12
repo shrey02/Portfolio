@@ -11,7 +11,7 @@ interface data{
 }
 
 function Card(props:data){
-  console.log(props);
+
   return (
     <>
         <div className="w-[19rem] border-2 border-pink-600 rounded-2xl m-auto text-center p-2 py-3 mt-8">
@@ -24,7 +24,7 @@ function Card(props:data){
           </h1>
           <p className="text-slate-100 text-left pl-3 font-roboto">
             {props.bulletPointsArray.map((point, index) => (
-              <>
+              <React.Fragment key={index}>
                 <br />
                 {point?.normalData}{" "}
                 <span className="text-indigo-300">
@@ -32,7 +32,7 @@ function Card(props:data){
                 </span>
                 {point?.endingData}
                 <br />
-              </>
+              </React.Fragment>
             ))}
           </p>
         </div>

@@ -14,8 +14,8 @@ import gitIcon from '../images/git.png'
 function Skills() {
   return (
     <div className='w-[100%] align-middle text-center flex flex-col' id='Skills'>
-      <svg className='z-20 -mb-9' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#151515" fill-opacity="1" d="M0,160L48,138.7C96,117,192,75,288,58.7C384,43,480,53,576,74.7C672,96,768,128,864,160C960,192,1056,224,1152,218.7C1248,213,1344,171,1392,149.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-       <div className='flex items-center py-1 mb-14 max-sm:mb-6 justify-center'>
+      <svg className='z-20 -mb-9' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#151515" fillOpacity="1" d="M0,160L48,138.7C96,117,192,75,288,58.7C384,43,480,53,576,74.7C672,96,768,128,864,160C960,192,1056,224,1152,218.7C1248,213,1344,171,1392,149.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+       <div className='flex items-center py-1 mb-14 max-sm:mb-10 justify-center'>
        <div className="h-px bg-amber-300 w-[10%]"></div> 
         {/* <img src={skillIcon} alt='skills' className='w-[6rem] h-[6rem] max-[500px]:h-[4rem] max-[500px]:w-[4rem]'></img> */}
        <div className='text-[3rem] bg-gradient-to-r
